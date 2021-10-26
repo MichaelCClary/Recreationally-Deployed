@@ -9,7 +9,7 @@ const axios = require('axios');
 const Activity = require('./activity');
 const Topic = require('./topic');
 const BASE_URL = "https://developer.nps.gov/api/v1";
-const api_key = require("../secretKey");
+const { API_KEY } = require("../config");
 
 /** Related functions for parks. */
 
@@ -145,7 +145,7 @@ class Park {
     static async request(endpoint, data = {}, method = "get",) {
         console.debug("API Call:", endpoint, data, method);
 
-        const url = `${BASE_URL}/${endpoint}&api_key=${api_key}`;
+        const url = `${BASE_URL}/${endpoint}&api_key=${API_KEY}`;
         const params = (method === "get")
             ? data
             : {};

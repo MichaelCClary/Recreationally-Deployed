@@ -14,8 +14,6 @@ const {
   commonAfterEach,
   commonAfterAll,
 } = require("./_testCommon");
-const { Restaurant } = require("@material-ui/icons");
-const { responsiveFontSizes } = require("@material-ui/core");
 
 beforeAll(commonBeforeAll);
 beforeEach(commonBeforeEach);

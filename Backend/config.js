@@ -6,6 +6,7 @@ require("dotenv").config();
 require("colors");
 
 const SECRET_KEY = process.env.SECRET_KEY || "secret-dev";
+const API_KEY = process.env.API_KEY || "not a real dev key";
 
 const PORT = +process.env.PORT || 3001;
 
@@ -27,6 +28,7 @@ console.log("---");
 
 module.exports = {
   SECRET_KEY,
+  API_KEY,
   PORT,
   BCRYPT_WORK_FACTOR,
   getDatabaseUri,
