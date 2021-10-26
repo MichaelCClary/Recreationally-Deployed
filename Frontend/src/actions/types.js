@@ -1,0 +1,13 @@
+export const CHECK_IN_USER = 'CHECK_IN_USER';
+export const UPDATE_USER = 'UPDATE_USER';
+export const LOG_OUT = 'LOG_OUT';
+export const LOG_OUT_PARK = 'LOG_OUT_PARK';
+export const GET_RANDOM_PARK = 'GET_RANDOM_PARK';
+export const SEARCH_PARKS = 'SEARCH_PARKS';
+export const SETUP_PARKS = 'SETUP_PARKS';
+export const ADD_PARK_DETAIL = 'ADD_PARK_DETAIL';
+export const ADD_COLLECTION = 'ADD_COLLECTION';
+export const ADD_PARK_TO_COLLECTION = 'ADD_PARK_TO_COLLECTION';
+export const ERROR = 'ERROR';
+export const SHOW_LOADER = "SHOW_LOADER";
+export const HIDE_LOADER = "HIDE_LOADER";
