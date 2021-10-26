@@ -13,6 +13,7 @@ const { API_KEY } = require("../config");
 
 /** Related functions for parks. */
 
+
 class Park {
 
     static async addPark(park) {
@@ -316,21 +317,20 @@ class Park {
 
         return activity;
     }
-}
 
-async function updateDBParks() {
-    try {
-        let parks = await Park.getParksFromAPI();
-        for (let park of parks.data) {
-            await Park.addPark(park);
+    static async updateDBParks() {
+        try {
+            let parks = await Park.getParksFromAPI();
+            for (let park of parks.data) {
+                await Park.addPark(park);
+            }
+        } catch (err) {
+            console.error("API Error:", err);
         }
-    } catch (err) {
-        console.error("API Error:", err);
-    }
 
+    }
 }
 
-updateDBParks();
 
 
 module.exports = Park;
