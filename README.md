@@ -91,7 +91,7 @@ I wanted to make this to help me find places to go hiking with my daughter.  Whe
 This is my final capstone project with Springboard.
 I built the backend with node using express and psql for a database. I used React, Material Ui, formik, and yup for front end.  I used Redux for the state management but I am in the process of removing it due to not liking how it functions and wanting to simplify my stack a little bit.
 
-Every search hits the the database and returns parks which are then filtered by topics/activites you included.  This was tricky to be able to have 4 filters/search functions without requiring all of them.
+Every search hits the the database and returns parks which are then filtered by topics/activites you included.  This was tricky to be able to have 4 filters/search functions without requiring all of them every time.
 
 Material ui was used to help layout the page and give me building blocks/style elements.  It was not included with the course work but I really wanted to learn it.  
 
@@ -227,6 +227,7 @@ Project Link: [https://github.com/MichaelCClary/Recreationally-Deployed](https:/
 ## Acknowledgements
 
 * [Heroku](heroku.com)
+* [Surge.sh](https://surge.sh/)
 * [National Park Services](https://www.nps.gov/index.htm)
 * [othneildrew](https://github.com/othneildrew/Best-README-Template)
 
