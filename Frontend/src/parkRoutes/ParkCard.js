@@ -35,7 +35,8 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-around',
     },
     LinkButton: {
-        marginTop: 10
+        marginTop: 10,
+        marginBottom: 10
     }
 }));
 
