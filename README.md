@@ -91,11 +91,7 @@ I wanted to make this to help me find places to go hiking with my daughter.  Whe
 This is my final capstone project with Springboard.
 I built the backend with node using express and psql for a database. I used React, Material Ui, formik, and yup for front end.  I used Redux for the state management but I am in the process of removing it due to not liking how it functions and wanting to simplify my stack a little bit.
 
-Every search hits the api to get games and homepage is a basic search of most popular games.  When you click on more information or add a game to your collection, then it is added to the database.  
-
-The search function was tricky because the api wouldn't let you search for say a name and a category at the same time.  It is a browse the category and search by name.  The categories/mechanics/players are in a select drop down menu for easy finding.
-
-I used Javascript to let you add/remove games from your collection without reloading page and to handle hiding search boxes you weren't currently using.
+Every search hits the the database and returns parks which are then filtered by topics/activites you included.  This was tricky to be able to have 4 filters/search functions without requiring all of them.
 
 Material ui was used to help layout the page and give me building blocks/style elements.  It was not included with the course work but I really wanted to learn it.  
 
