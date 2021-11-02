@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 import { useEffect } from 'react';
 import { shallowEqual, useSelector, useDispatch } from "react-redux";
 import RecreationallyApi from './api';

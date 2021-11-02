@@ -31,17 +31,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/MichaelCClary/Recreationally-Deployed">
-    <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
+  <!-- <a href="https://github.com/MichaelCClary/Recreationally-Deployed">
+   <img src="images/logo.png" alt="Logo" width="80" height="80">
     Recreationally
-  </a>
+  </a>  -->
 
   <h3 align="center">Recreationally</h3>
 
   <p align="center">
-    This is a simple website to search for through the national park service and find new parks that meet different criteria.  You can browse by different activities, topics, state, or search by name/description.  I hope you enjoy playing around with it as much as I did making it.  Please let me know if there are any improvements/bugs for me to make.  I plan to keep working on this to make it better and better.
+    This is a simple website to search the national park service and find new parks that meet different criteria.  You can browse by different activities, topics, state, or search by name/description.  I hope you enjoy playing around with it as much as I did making it.  Please let me know if there are any improvements/bugs for me to make.  I plan to keep working on this to make it better and better.
     <br />
-    <a href="https://github.com/MichaelCClary/Recreationally-Deployed"><strong>Explore the docs »</strong></a>
+    <!-- <a href="https://github.com/MichaelCClary/Recreationally-Deployed"><strong>Explore the docs »</strong></a> -->
     <br />
     <br />
     <a href="https://level-exchange.surge.sh/">View Demo</a>
@@ -91,7 +91,7 @@ I wanted to make this to help me find places to go hiking with my daughter.  Whe
 This is my final capstone project with Springboard.
 I built the backend with node using express and psql for a database. I used React, Material Ui, formik, and yup for front end.  I used Redux for the state management but I am in the process of removing it due to not liking how it functions and wanting to simplify my stack a little bit.
 
-Every search hits the the database and returns parks which are then filtered by topics/activites you included.  This was tricky to be able to have 4 filters/search functions without requiring all of them every time.
+Every search hits the database and returns parks which are then filtered by topics/activites you included.  This was tricky to be able to have 4 filters/search functions without requiring all of them every time.
 
 Material ui was used to help layout the page and give me building blocks/style elements.  It was not included with the course work but I really wanted to learn it.  
 
@@ -136,7 +136,7 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 * Install node
-* Install PSQL and setup database with recreationaly.sql as your schema design
+* Install PSQL and setup database with recreationaly.sql as your schema design from backend
 
 ### Installation
 Please let me know if you have any trouble or anything is not clear and I will try my best
@@ -147,6 +147,7 @@ Please let me know if you have any trouble or anything is not clear and I will t
    ```
 2. cd into backend folder and install packages
    ```sh
+   cd Backend
    npm install
    ```   
 3. Get a free API key at https://www.nps.gov/subjects/developer/get-started.htm
@@ -163,7 +164,7 @@ Please let me know if you have any trouble or anything is not clear and I will t
    ```sh
    node server.js
    ```
-7. In a seperate terminal cd into frontend folder and install packages
+7. In a separate terminal cd into frontend folder and install packages
    ```sh
    npm install
    ```
@@ -186,8 +187,6 @@ Current - high priority features
 * Pagination of search results
 
 Some more distance features
-* Think of better names for collections
-* Think of better names for everything else?
 * Directions to parks
 * Friends/friends list
 * Share Collections

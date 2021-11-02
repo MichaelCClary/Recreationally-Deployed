@@ -10,6 +10,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ParkChip from './ParkChip';
 import AddParkToCollectionsMenu from './AddParkToCollectionsMenu';
 import { shallowEqual, useSelector, } from "react-redux";
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -43,12 +44,17 @@ const useStyles = makeStyles((theme) => ({
 
 function ParkCard({ park }) {
     const classes = useStyles();
+    const history = useHistory();
     const [expanded, setExpanded] = React.useState(false);
     const { user } = useSelector((state => state.users), shallowEqual);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
+
+    const handleLink = (url) => {
+        history.push(url);
+    }
 
     return (
         <>
@@ -60,7 +66,11 @@ function ParkCard({ park }) {
                     <Typography variant="body2" color="textSecondary" component="p">
                         {park.description}
                     </Typography>
-                    <Button color="primary" key={park.parkCode} variant="outlined" href={`/parks/${park.parkCode}`} className={classes.LinkButton}>
+                    <Button
+                        color="primary" key={park.parkCode}
+                        variant="outlined"
+                        onClick={() => handleLink(`/parks/${park.parkCode}`)}
+                        className={classes.LinkButton}>
                         Park Detail Page
                     </Button>
                     {user && <AddParkToCollectionsMenu park={park.parkCode} />}
