@@ -166,6 +166,7 @@ Please let me know if you have any trouble or anything is not clear and I will t
    ```
 7. In a separate terminal cd into frontend folder and install packages
    ```sh
+   cd Frontend
    npm install
    ```
 8. Start up front end server with react   
