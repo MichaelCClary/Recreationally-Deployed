@@ -89,15 +89,15 @@
 I wanted to make this to help me find places to go hiking with my daughter.  Where we live is not very good for walking so I thought it would be nice to be able to search for hiking areas near to me.  I used the national park service API to be able to comb through their records and thought it would be a great way to plan a trip or just find out what parks offer what activities and topics.
 
 This is my final capstone project with Springboard.
-I built the backend with node using express and psql for a database. I used React, Material Ui, formik, and yup for front end.  I used Redux for the state management but I am in the process of removing it due to not liking how it functions and wanting to simplify my stack a little bit.
+I built the backend with node using express and psql for a database. I used React, Material UI, Formik, and Yup for front end.  I used Redux for the state management but I am in the process of removing it due to not liking how it functions and wanting to simplify my stack a little bit.
 
 Every search hits the database and returns parks which are then filtered by topics/activites you included.  This was tricky to be able to have 4 filters/search functions without requiring all of them every time.
 
-Material ui was used to help layout the page and give me building blocks/style elements.  It was not included with the course work but I really wanted to learn it.  
+Material UI was used to help layout the page and give me building blocks/style elements.  It was not included with the course work but I really wanted to learn it.  
 
 Special thank you to National Park Service for their API which has is a great source of information and shows how much they really do.  I honestly had no idea there were almost 500 national parks.
 
-Special thank you to my mentor Philip who helped me get trhough all this and tell me how to improve my ui at every turn.
+Special thank you to my mentor Philip who helped me get trhough all this and tell me how to improve my UI at every turn.
 
 ## User Flow
 1. User will go to home page which displays a random park and can be refreshed/random button clicked to change button
@@ -136,7 +136,8 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 * Install node
-* Install PSQL and setup database with recreationaly.sql as your schema design from backend
+* Install PSQL
+  
 
 ### Installation
 Please let me know if you have any trouble or anything is not clear and I will try my best
@@ -145,31 +146,35 @@ Please let me know if you have any trouble or anything is not clear and I will t
    ```sh
    git clone https://github.com/MichaelCClary/Recreationally-Deployed.git
    ```
-2. cd into backend folder and install packages
+2. Cd into backend folder and install packages
    ```sh
    cd Backend
    npm install
    ```   
-3. Get a free API key at https://www.nps.gov/subjects/developer/get-started.htm
+3. Set up database
+   ```sh
+   psql <  recreationally.sql
+   ```
+4. Get a free API key at https://www.nps.gov/subjects/developer/get-started.htm
 
-4. create a .env file and Enter your API in .env
+5. create a .env file and Enter your API in .env
    ```sh
    API_KEY = I am an API Key
    ```
-5. Enter your SECRET_KEY in .env
+6. Enter your SECRET_KEY in .env
    ```sh
    SECRET_KEY = I am a secret key
    ```
-6. Run from terminal
+7. Run from terminal
    ```sh
    node server.js
    ```
-7. In a separate terminal cd into frontend folder and install packages
+8. In a separate terminal cd into frontend folder and install packages
    ```sh
    cd Frontend
    npm install
    ```
-8. Start up front end server with react   
+9. Start up front end server with react   
    ```sh
    npm start
    ```
